@@ -1,6 +1,6 @@
 <section class="todoapp">
   <header class="header">
-  <div class="pull-left" *ngIf="todos.length > 0">
+  <div style="position: absolute;" class="pull-left" *ngIf="todos.length > 0">
   <span style="font-size:40px;" class="text-center"><strong>{{todos.length}}</strong> {{todos.length == 1 ? 'item' : 'items'}} left</span>
   </div>
     <h1 class="text-center">Todos</h1>
@@ -29,7 +29,7 @@
       </li>
     </ul>
   </section>
-  <footer class="footer" >
+  <footer class="footer">
     
   </footer>
 </section>
