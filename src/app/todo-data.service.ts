@@ -10,6 +10,7 @@ export class TodoDataService {
   todos: Todo[] = [];
 
   addTodo(todo: Todo): TodoDataService{
+    console.log(todo);
   	if (!todo.id){
   		todo.id = ++this.lastId;
   	}
@@ -24,6 +25,7 @@ export class TodoDataService {
   }
 
   toggleTodoComplete(todo:Todo){
+    console.log(todo);
   	let updatedTodo = this.updateTodoById(todo.id,{
   		complete:!todo.complete
   	});
