@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Routes, RouterModule } from '@angular/router';
 import { AppViewComponent} from './app-view/app-view.component';
 import { AppEditComponent} from './app-edit/app-edit.component';
@@ -10,7 +11,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),
+            NgbModule],
   exports: [RouterModule],
   providers: []
 })
