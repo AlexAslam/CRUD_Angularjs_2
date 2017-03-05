@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-view.component.css']
 })
 export class AppViewComponent implements OnInit {
-
+	title = 'qwekjqwkeqjweqlw';
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
