@@ -9,5 +9,4 @@ export class AppServiceService {
 	getAppClasses(): AppClass[]{
 		return APPCLASSES;
 	}
-
 }
